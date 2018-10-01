@@ -1,0 +1,320 @@
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:400,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+    <style>
+      body {
+        position: relative;
+      }
+      
+      ul.nav-pills {
+        top: 100px;
+        position: fixed;
+      }
+      
+      div.col-sm-9 div {
+        height: 250px;
+        font-size: 28px;
+      }
+      
+      .bg-1 {
+        background-color: black;
+      }
+      
+      .bg-1 ul li {
+        color: #ecf0f1;
+        font-family: 'Gugi', cursive;
+        font-size: 15px;
+      }
+      
+      .bg-2 {
+        width: 86%;
+        background-color: #d1d8e0;
+      }
+      
+      .col-sm-3 {
+        width: 14% !important;
+        background-color: white !important;
+      }
+      
+      @media screen and (max-width: 810px) {
+        #about,
+        #education,
+        #certifications,
+        #skills,
+        #projects,
+        #experience,
+        #interest {
+          margin-left: 150px;
+        }
+      }
+      
+      #myScrollspy {
+        position: fixed;
+        align-self: center;
+        left: 0;
+        top: 0;
+      }
+
+      
+      #hello {
+        font-family: 'Black Han Sans', sans-serif;
+        font-size: 65px;
+        margin-left: 150px;
+        margin-top: 200px;
+      }
+      
+      #name {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 55px;
+        font-weight: 600;
+        margin-left: 150px;
+        /*margin-top: 30px;*/
+      }
+      
+      #self {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 30px;
+        font-weight: 500;
+        margin-left: 150px;
+        margin-top: 30px;
+      }
+      
+      #engineer {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 30px;
+        font-weight: 500;
+        margin-left: 150px;
+        margin-top: 30px;
+      }
+      
+      #intro {
+        font-family: 'Lora', serif;
+        font-size: 20px;
+        color: #d1d8e0;
+        margin-left: 150px;
+        margin-top: 15px;
+      }
+      
+      hr {
+        width: 400px;
+        border-top: 1px solid #4b6584;
+        border-bottom: 1px solid #4b6584;
+      }
+      
+      #education {
+        margin-top: 300px;
+      }
+      
+      #email {
+        font-size: 10px;
+      }
+      
+      #headings {
+        font-family: 'Saira Extra Condensed', sans-serif;
+        color: #343a40;
+        font-weight: 700;
+        font-size: 50px;
+      }
+      
+      #social {
+        margin-top: -90px;
+        margin-left: 250px;
+      }
+      
+      .image {
+        margin-left: 20px;
+        padding: 1px;
+      }
+      
+      .subheadings {
+        font-family: 'Saira Extra Condensed', sans-serif;
+        color: #20bf6b;
+        font-weight: 500;
+        font-size: 40px;
+      }
+      
+      #certifications {
+        margin-top: 300px;
+      }
+      
+      .nav-pills>li.active>a,
+      .nav-pills>li.active>a:focus,
+      .nav-pills>li.active>a:hover {
+        color: #fff;
+        /* background-color: #337ab7; */
+        background-color: unset !important;
+      }
+      #Date{
+        margin-left: 60%;
+        margin-top: -84px;
+      }
+      h5{
+        font-weight: bolder;
+        margin-left: 50px;
+      }
+      #skills{
+        margin-top: 320px;
+      }
+      .devicons{
+        font-size: 5rem !important;
+      }
+      #projects{
+        margin-top: 200px;
+      }
+      #experience{
+        margin-top: 300px;
+      }
+      #interest{
+        margin-top: 300px;
+      }
+    </style>
+  </head>
+
+  <body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+
+    <div class="container-fluid">
+      <div class="row bg-1">
+        <!--  Left Side Navigation Bar -->
+        <div class="col-sm-3 text-center" id="backg">
+          <nav id="myScrollspy">
+
+            <ul class="nav nav-pills nav-stacked ">
+              <img class="img-rounded img-responsive center-block image" src="naqqash.png" height="150" width="150 ">
+              <li class="active"><a href="#about">ABOUT</a></li>
+              <li><a href="#education">EDUCATION</a></li>
+              <li><a href="#certifications">CERTIFICATIONS</a></li>
+              <li><a href="#skills">SKILLS</a></li>
+              <li><a href="#projects">PROJECTS</a></li>
+              <li><a href="#experience">EXPERIENCE</a></li>
+              <li><a href="#interest">INTEREST</a></li>
+            </ul>
+          </nav>
+
+        </div>
+        <!--  Right Side  -->
+        <div class="col-sm-9 bg-2">
+          <!-- About -->
+          <div id="about">
+            <h1 id="hello">hello</h1>
+            <h3 id="name">I'm Muhammad Naqqash,</h3>
+            <h3 id="self">a self taught developer.</h3>
+            <h3 id="engineer">I'm a Computer Engineer. </h3>
+            <p id="intro">I'm a positive and friendly person. Also, I love to set goals and achieve them.<br> My important qualities: self-motivated, ability overcome difficulties and the <br> ability to learn.</p>
+
+            <div id="social">
+              <a href=""><i class="fab fa-facebook fa-lg"></i><span style="display:inline-block; width: 5px;"></span>
+              <a href=""><i class="fab fa-linkedin fa-lg"></i></a> <span style="display:inline-block; width: 0px;"></span>
+              <a href=""><i class="fab fa-twitter-square fa-lg"></i></a><span style="display:inline-block; width: 5px;"></span>
+              <a href=""><i class="fab fa-github-square fa-lg"></i></a><span style="display:inline-block; width: 5px;"></span>
+
+            </div>
+
+
+          </div>
+          
+          <!-- education -->
+          <div id="education">
+            <div>
+              <h1 id="headings">EDUCATION</h1>
+              <h2 class="subheadings1"><i class="fas fa-graduation-cap fa-sm"></i><span style="display:inline-block; width: 20px;"></span>BS Computer Engineering</h2>
+              <h3 class="subheadings2"><i class="fas fa-university fa-sm"></i><span style="display:inline-block; width: 30px;"></span>NUST College of E&ME</h3>
+              <h3 id="Date">2014-18</h3>
+            </div>
+            
+            
+          </div>
+          <div id="certifications">
+            <div>
+              <h1 id="headings">Certifications</h1>
+              <h2 class="subheadings1"><i class="fas fa-certificate fa-sm"></i><span style="display:inline-block; width: 20px;"></span>Microsoft Office Specialist</h2>
+              <h5>Microsoft</h5>
+              <h2 class="subheadings1"><i class="fas fa-certificate fa-sm"></i><span style="display:inline-block; width: 20px;"></span>The Web Developer Bootcamp</h2>
+              <h5>Udemy</h5>
+              <h2 class="subheadings1"><i class="fas fa-certificate fa-sm"></i><span style="display:inline-block; width: 20px;"></span>Wordpress Customization</h2>
+              <h5>Udemy</h5>
+              
+            </div>
+          </div>
+          <div id="skills">
+            <div>
+              <h1 id="headings">Skills</h1>
+              <h3>Programming Languages & Tools</h3>
+              <div class="devicons">
+                <i class="devicon-html5-plain "></i>
+                <i class="devicon-css3-plain"></i>
+                <i class="devicon-bootstrap-plain"></i>
+                <i class="devicon-javascript-plain"></i>
+                <i class="devicon-jquery-plain"></i>
+                <i class="devicon-wordpress-plain"></i>
+                <i class="devicon-cplusplus-plain"></i>
+                <i class="devicon-illustrator-plain"></i>
+              </div>
+              
+              
+              
+
+              
+            </div>
+          </div>
+          <div id="projects">
+            <div>
+              <h1 id="headings">Projects</h1>
+              <div style="font-size:3em; color: black;">
+                <a href="#"><i class="fab fa-github"></i>
+
+                </a><span style="display:inline-block; width: 40px;"></span>
+              <a href="#"><i class="fab fa-codepen"></i></a>
+              </div>
+              
+            </div>
+            
+          </div>
+          <div id="experience">
+            <div>
+              <h1 id="headings">Experience</h1>
+              <h2 class="subheadings1"><i class="fas fa-globe fa-sm"></i><span style="display:inline-block; width: 20px;"></span>Teaching & Management</h2>
+              <h5>Taught Physics, Chemistry & Mathematics. Key role in managing test
+                  sessions, class schedules and Provide full learning experience and
+                  support for students beyond set classes, working with pupils
+                  experiencing barriers to learning across the academic range.</h5>
+                  <br>
+              <h2 class="subheadings1"><i class="fas fa-globe fa-sm"></i><span style="display:inline-block; width: 20px;"></span>Career Counselling</h2>
+              <h5>Have done many seminars on career
+                  counselling and motivational lectures in
+                  many educational institutes.
+              </h5>
+            </div>
+            
+          </div>
+          <div id="interest">
+            <div>
+              <h1 id="headings">Interest</h1>
+              <i class="fas fa-code fa-lg"></i><span style="display:inline-block; width: 40px;"></span>
+              <i class="fas fa-plane fa-lg "></i><span style="display:inline-block; width: 40px;"></span>
+              <i class="fas fa-music fa-lg"></i>
+            </div>
+            
+          </div>
+          <div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
