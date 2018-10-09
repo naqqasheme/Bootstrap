@@ -1,0 +1,37 @@
+
+.img-circle{
+	border-radius: 50%;
+}
+.bg-1{
+	background-color: #1abc9c;
+    color: #ffffff;
+}
+.bg-2{
+	  background-color: #474e5d; /* Dark Blue */
+      color: #ffffff;
+
+}
+.bg-3{
+	  background-color: #ffffff; /* White */
+      color: #555555;
+}
+.container-fluid{
+	padding-top: 70px;
+    padding-bottom: 70px;
+}
+.bg-4{
+	background-color: #262228
+
+}
+.color-text{
+	color: #ffffff;
+}
+.navbar{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-bottom: 0;
+	font-size: 12px;
+    letter-spacing: 5px;
+.navbar-nav li a:hover{
+color: #1abc9c !important;
+}
